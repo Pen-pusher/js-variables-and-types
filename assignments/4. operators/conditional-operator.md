@@ -19,12 +19,53 @@ var status = 'single';
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
 // your code goes here
+let first_num = prompt("enter first number");
+let first_int = Number(first_num);
+
+let second_num = prompt("enter second number");
+let second_int = Number(second_num);
+
+if(first_int > second_int) {
+  alert(first_int + " first number is greater than second number " + second_int);
+}else if(second_int > first_int) {
+  alert(second_int + " second number is greater than first number " + first_int);
+}else {
+  alert("No a numeber");
+}
+
+
+
+
 ```
+
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+let first_number = prompt("enter your first number") 
+  ,second_number = prompt("enter your second number") 
+  ,third_number = prompt("enter your third number");
+  
+  // alert(third_number);
+
+  let first_integer = Number(first_number)
+    ,second_integer = Number(second_number)
+    ,third_integer = Number(third_number);
+
+  let product_all = first_integer * second_integer * third_integer ;
+  if(product_all > 0 ){
+    alert("its a positive number" + " + " + product_all)
+  }else if (product_all < 0){
+    alert("its a positive number" + " - " + product_all)
+  }else {
+    alert("its not a number")
+  }
+  
+
+
+
+```
 ```
 
 ## Switch Statement
