@@ -8,12 +8,49 @@
     * [ ] Sub
     * [ ] Mul
     * [ ] Div
+    
+    let num_1 = +prompt("enter number one")
+    let num_2 = +prompt("enter number two")
+
+    let add = confirm("Do you wanna add these number");
+    if(add == true){
+      console.log(num_1 + num_2)
+    }else{
+      console.log(" user canelled addition ")
+    }
+    let multiply = confirm("Do you wanna multiply these number");
+    if(multiply == true){
+      console.log(num_1 * num_2)
+    }else{
+      console.log(" user canelled substraction ")
+    }
+    let divide =  confirm("Do you wanna divide these number");
+    if(divide == true){
+      if (num_1 > num_2){
+        console.log(num_1 % num_2)
+      }else{
+        console.log("number 1 must be bigger to perform the action/or user cancelled")
+      }
+    }
+    let substract = confirm ("DO you wanna subtract these two number")
+     if(substract == true){
+      if (num_1 > num_2){
+        console.log(num_1 - num_2)
+      }else{
+        console.log("number 1 must be bigger to perform the action/or user cancelled")
+      }
+    }
 
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+if (status == 'single'){
+  console.log( firstName + ' is ' + status)
+}else {
+  console.log(firstName + ' is married ')
+}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.

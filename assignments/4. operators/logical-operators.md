@@ -71,4 +71,5 @@ if(temperature < 32){
 4. 🎖 Output of this and the reason behind the output.
 ```js
 alert( alert(1) || 2 || alert(3) );
+the program is executng from left to right so alert(1) will be thr first to execute,as other alert are nested inside a alert so alert(2) will be second but at the execution of the last one it will be calling alert(alert(3)),so as we know we cant call a function insde a function so it will return undefined;
 ```
