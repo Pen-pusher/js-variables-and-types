@@ -8,23 +8,101 @@
     * [ ] Sub
     * [ ] Mul
     * [ ] Div
+    
+    let num_1 = +prompt("enter number one")
+    let num_2 = +prompt("enter number two")
+
+    let add = confirm("Do you wanna add these number");
+    if(add == true){
+      console.log(num_1 + num_2)
+    }else{
+      console.log(" user canelled addition ")
+    }
+    let multiply = confirm("Do you wanna multiply these number");
+    if(multiply == true){
+      console.log(num_1 * num_2)
+    }else{
+      console.log(" user canelled substraction ")
+    }
+    let divide =  confirm("Do you wanna divide these number");
+    if(divide == true){
+      if (num_1 > num_2){
+        console.log(num_1 % num_2)
+      }else{
+        console.log("number 1 must be bigger to perform the action/or user cancelled")
+      }
+    }
+    let substract = confirm ("DO you wanna subtract these two number")
+     if(substract == true){
+      if (num_1 > num_2){
+        console.log(num_1 - num_2)
+      }else{
+        console.log("number 1 must be bigger to perform the action/or user cancelled")
+      }
+    }
 
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+if (status == 'single'){
+  console.log( firstName + ' is ' + status)
+}else {
+  console.log(firstName + ' is married ')
+}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
 // your code goes here
+let first_num = prompt("enter first number");
+let first_int = Number(first_num);
+
+let second_num = prompt("enter second number");
+let second_int = Number(second_num);
+
+if(first_int > second_int) {
+  alert(first_int + " first number is greater than second number " + second_int);
+}else if(second_int > first_int) {
+  alert(second_int + " second number is greater than first number " + first_int);
+}else {
+  alert("No a numeber");
+}
+
+
+
+
 ```
+
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+let first_number = prompt("enter your first number") 
+  ,second_number = prompt("enter your second number") 
+  ,third_number = prompt("enter your third number");
+  
+  // alert(third_number);
+
+  let first_integer = Number(first_number)
+    ,second_integer = Number(second_number)
+    ,third_integer = Number(third_number);
+
+  let product_all = first_integer * second_integer * third_integer ;
+  if(product_all > 0 ){
+    alert("its a positive number" + " + " + product_all)
+  }else if (product_all < 0){
+    alert("its a positive number" + " - " + product_all)
+  }else {
+    alert("its not a number")
+  }
+  
+
+
+
+```
 ```
 
 ## Switch Statement
@@ -44,6 +122,50 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
 ```js
 // Your code goes here
+let user_input = +prompt("Enter The Number");
+switch(user_input){
+  case (user_input = 1):
+  alert("ONE");
+  break;
+
+  case (user_input = 2):
+ 	alert("TWO");
+  break;
+ 
+  case (user_input = 3):
+  alert("THREE");
+  break;
+
+  case (user_input = 4):
+ 	alert("FOUR");
+  break;
+  
+  case (user_input = 5):
+  alert("FIVE");
+  break;
+
+  case (user_input = 6):
+ 	alert("SIX");
+  break;
+  
+  case (user_input = 7):
+  alert("SEVEN");
+  break;
+
+  case (user_input = 8):
+ 	alert("EIGHT");
+  break;
+  
+  case (user_input = 9):
+ 	alert("NINE");
+  break;
+  
+  default:
+  alert("PLEASE TRY AGAIN");
+  break;
+
+
+}
 ```
 
 2. 🎖Using switch statement do the following
@@ -59,4 +181,34 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 * [ ] `FF` if `marks` is less than or equal to 30
 ```js
 // Your code goes here
+let marks = prompt("whats ur number" );
+switch(true){
+  case(marks > 90) :
+  alert("AA");
+  break;
+  case(marks > 80 && marks <= 90 ) :
+   alert("AB");
+  break;
+  case(marks > 70 && marks <= 80 ) :
+   alert("BB");
+  break;
+  case(marks > 60 && marks <= 70 ) :
+   alert("BC");
+  break;
+  case(marks > 50 && marks <= 60 ) :
+   alert("CC");
+  break;
+  case(marks > 40 && marks <= 50 ) :
+   alert("CD");
+  break;
+  case(marks > 30 && marks <= 40 ) :
+   alert("DD");
+  break;
+  case(marks >= 90 ) :
+   alert("FF");
+  break;
+  default:
+  alert("you didnt qualified")
+}
+
 ```
