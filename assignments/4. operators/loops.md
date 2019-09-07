@@ -52,7 +52,14 @@ let number = "" ;
 "1 * 3 = 3"
 "1 * 4 = 4"
 .... for all 100 results)
-
+function multiply() {
+    for(var i = 1; i < 11 ; i++){
+        for(var j = 1 ; j < 11 ; j++) {
+            console.log(i * j)
+        }
+    }
+}
+multiply();
 5. 🎖Show the following output using one loop.
 ```js
 // 1, 2, 3, 4, 5

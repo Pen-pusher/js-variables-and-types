@@ -122,6 +122,50 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
 ```js
 // Your code goes here
+let user_input = +prompt("Enter The Number");
+switch(user_input){
+  case (user_input = 1):
+  alert("ONE");
+  break;
+
+  case (user_input = 2):
+ 	alert("TWO");
+  break;
+ 
+  case (user_input = 3):
+  alert("THREE");
+  break;
+
+  case (user_input = 4):
+ 	alert("FOUR");
+  break;
+  
+  case (user_input = 5):
+  alert("FIVE");
+  break;
+
+  case (user_input = 6):
+ 	alert("SIX");
+  break;
+  
+  case (user_input = 7):
+  alert("SEVEN");
+  break;
+
+  case (user_input = 8):
+ 	alert("EIGHT");
+  break;
+  
+  case (user_input = 9):
+ 	alert("NINE");
+  break;
+  
+  default:
+  alert("PLEASE TRY AGAIN");
+  break;
+
+
+}
 ```
 
 2. 🎖Using switch statement do the following
@@ -137,4 +181,34 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 * [ ] `FF` if `marks` is less than or equal to 30
 ```js
 // Your code goes here
+let marks = prompt("whats ur number" );
+switch(true){
+  case(marks > 90) :
+  alert("AA");
+  break;
+  case(marks > 80 && marks <= 90 ) :
+   alert("AB");
+  break;
+  case(marks > 70 && marks <= 80 ) :
+   alert("BB");
+  break;
+  case(marks > 60 && marks <= 70 ) :
+   alert("BC");
+  break;
+  case(marks > 50 && marks <= 60 ) :
+   alert("CC");
+  break;
+  case(marks > 40 && marks <= 50 ) :
+   alert("CD");
+  break;
+  case(marks > 30 && marks <= 40 ) :
+   alert("DD");
+  break;
+  case(marks >= 90 ) :
+   alert("FF");
+  break;
+  default:
+  alert("you didnt qualified")
+}
+
 ```
